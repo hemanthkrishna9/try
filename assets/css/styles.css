@@ -300,7 +300,7 @@ strong { font-weight: 500; color: var(--ink); }
 .times span { color: var(--muted); }
 .times strong { color: var(--green); }
 .schedule .small { margin: 14px 0 18px; }
-.schedule-photo { margin-top: auto; aspect-ratio: 16 / 7; border-radius: 4px; background: linear-gradient(180deg, #f2d5b4 0%, #e1b894 50%, #6f7a5c 100%); }
+.schedule-photo { margin-top: auto; aspect-ratio: 5 / 4; border-radius: 4px; background: linear-gradient(180deg, #f2d5b4 0%, #e1b894 50%, #6f7a5c 100%); }
 
 .ws-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .ws-img { aspect-ratio: 4 / 3; border-radius: 4px; margin-bottom: 12px; }
@@ -313,7 +313,7 @@ strong { font-weight: 500; color: var(--ink); }
 .corporate { display: flex; gap: 12px; align-items: flex-start; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
 .corporate { align-items: center; }
 .corporate-photo { width: 72px; height: 72px; flex: none; border-radius: 50%; }
-.corporate-photo img { object-position: 60% 30%; }
+
 .corporate p { margin: 0; font-size: 14px; color: #474b44; }
 
 .pricing .checklist { margin-bottom: 26px; }
@@ -406,12 +406,13 @@ strong { font-weight: 500; color: var(--ink); }
   .about-grid { grid-template-columns: 1fr 1.3fr; }
   .philosophy { grid-column: 1 / -1; }
   .how-grid { grid-template-columns: 1fr; }
-  .how-photo { aspect-ratio: 16 / 7; }
+  .how-photo { aspect-ratio: 4 / 3; max-width: 560px; }
   .deco-corner { display: none; }
   .trio-grid { grid-template-columns: 1fr 1fr; }
   .pricing { grid-column: 1 / -1; }
   .bottom-grid { grid-template-columns: 1fr 1fr; }
-  .mindful { grid-column: 1 / -1; min-height: 240px; }
+  .mindful { grid-column: 1 / -1; min-height: 420px; }
+  .mindful-bg img { object-position: 50% 20%; }
 }
 
 @media (max-width: 920px) {
@@ -472,6 +473,8 @@ strong { font-weight: 500; color: var(--ink); }
 
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .about-photo { aspect-ratio: 4 / 4.5; max-width: 420px; }
+  .how-photo { aspect-ratio: 4 / 5; }
+  .mindful { min-height: 480px; }
   .deco-left { display: none; }
 
   .formats { grid-template-columns: 1fr; }
