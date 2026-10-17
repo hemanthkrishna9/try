@@ -23,14 +23,23 @@
     a.addEventListener('click', function () { setMenu(false); });
   });
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') setMenu(false);
+    if (e.key === 'Escape' && document.body.classList.contains('nav-open')) {
+      setMenu(false);
+      toggle.focus();
+    }
   });
+
+  var navLinks = document.querySelectorAll('.nav ul a');
+  function setActive(href) {
+    navLinks.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === href); });
+  }
 
   // Header shadow on scroll; mobile booking bar appears once past the hero
   var hero = document.querySelector('.hero');
   function onScroll() {
     header.classList.toggle('scrolled', window.scrollY > 10);
     document.body.classList.toggle('show-cta', window.scrollY > hero.offsetHeight * 0.8);
+    if (window.scrollY < hero.offsetHeight * 0.5) setActive('#top');
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -47,15 +56,9 @@
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
 
-    var links = {};
-    document.querySelectorAll('.nav ul a').forEach(function (a) { links[a.getAttribute('href')] = a; });
     var spy = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        var link = links['#' + entry.target.id];
-        if (!link) return;
-        Object.keys(links).forEach(function (k) { links[k].classList.remove('active'); });
-        link.classList.add('active');
+        if (entry.isIntersecting) setActive('#' + entry.target.id);
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
     ['about', 'offerings', 'schedule', 'workshops', 'faq', 'contact'].forEach(function (id) {
