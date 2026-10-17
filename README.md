@@ -15,18 +15,21 @@ assets/images/        photos
 
 ## Photos
 
-Put the photos in `assets/images/` with these exact names. Until a photo exists, the page shows a soft placeholder in its place.
+Photos are in `assets/images/`. Each one is cropped in CSS with `object-position`, so the originals can stay portrait.
 
-| File            | Where it appears                                   | Suggested shape        |
-|-----------------|----------------------------------------------------|------------------------|
-| `hero.jpg`      | Large banner at the top. The subject should be on the right. | Landscape, 2400×1200 or larger |
-| `chitrika.jpg`  | "Hi, I'm Chitrika" portrait                         | Portrait 4:5           |
-| `props.jpg`     | "How the Classes Work": a mat, blocks, a bottle      | Square                 |
-| `schedule.jpg`  | Weekly Schedule card                               | Wide landscape         |
-| `chandra.jpg`   | Chandra Namaskar workshop (a moon or an evening session) | 4:3                    |
-| `surya.jpg`     | Surya Namaskar workshop (a sunrise or a morning session) | 4:3                    |
-| `mindful.jpg`   | "Mindful Movement" banner. The subject should be on the left. | Landscape              |
+| File             | Where it appears                          |
+|------------------|-------------------------------------------|
+| `hero.jpg`       | Top banner (seated meditation)            |
+| `chitrika.jpg`   | "Hi, I'm Chitrika" (tree pose)            |
+| `pranayama.jpg`  | "How the Classes Work"                    |
+| `schedule.jpg`   | Weekly Schedule card (low lunge)          |
+| `corporate.jpg`  | Corporate yoga line in Workshops          |
+| `mindful.jpg`    | "Mindful Movement" card (dancer pose)     |
+| `og.jpg`         | Preview image when the link is shared     |
+| `chandra.jpg` / `surya.jpg` | Optional workshop photos. Until they're added, the cards show a moon and a sun drawn in CSS. |
+
+Keep each photo under about 300 KB. Photos sent through WhatsApp are already about that size.
 
 ## Publishing on GitHub Pages
 
-Go to the repo's **Settings → Pages**, set the source to "Deploy from a branch", and select the branch and `/ (root)`.
+The site is live at https://hemanthkrishna9.github.io/try/ and is served from the `gh-pages` branch.
