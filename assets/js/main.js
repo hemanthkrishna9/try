@@ -26,8 +26,12 @@
     if (e.key === 'Escape') setMenu(false);
   });
 
-  // Header shadow on scroll
-  function onScroll() { header.classList.toggle('scrolled', window.scrollY > 10); }
+  // Header shadow on scroll; mobile booking bar appears once past the hero
+  var hero = document.querySelector('.hero');
+  function onScroll() {
+    header.classList.toggle('scrolled', window.scrollY > 10);
+    document.body.classList.toggle('show-cta', window.scrollY > hero.offsetHeight * 0.8);
+  }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
