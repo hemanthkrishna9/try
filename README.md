@@ -34,6 +34,6 @@ Keep each photo under about 300 KB. Photos sent through WhatsApp are already abo
 
 Testimonials are in `assets/js/testimonials.js`. To add one, copy a block and fill in `name`, `meta` (class type or place), `quote` and `tags`. `mark` is optional: it must be a sentence copied exactly from the quote, and it gets highlighted. The filter buttons and story counts update automatically.
 
-## Publishing on GitHub Pages
+## Publishing
 
-The site is live at https://hemanthkrishna9.github.io/try/ and is served from the `gh-pages` branch.
+The site is live at https://try.gudachari3.workers.dev/ on Cloudflare. A copy is also at https://hemanthkrishna9.github.io/try/ on GitHub Pages. Both deploy from the `gh-pages` branch, so pushing to `gh-pages` updates both.
