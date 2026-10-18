@@ -250,11 +250,6 @@ strong { font-weight: 500; color: var(--ink); }
 
 /* Offerings */
 .offerings { background: var(--cream-2); }
-.formats { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; }
-.format-card { padding: 22px 26px; border-radius: var(--radius); background: var(--green); color: #e8ece4; }
-.format-card h3 { color: #fff; font-size: 24px; }
-.format-card .pill { display: inline-block; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; border: 1px solid rgba(255, 255, 255, .35); border-radius: 999px; padding: 3px 12px; margin: 8px 0 10px; }
-.format-card p:last-child { margin: 0; font-size: 15px; }
 
 .offer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .offer {
@@ -298,7 +293,7 @@ strong { font-weight: 500; color: var(--ink); }
 
 /* Schedule / Workshops / Pricing */
 .trio { background: var(--cream-2); }
-.trio-grid { display: grid; grid-template-columns: 1fr 1.15fr .85fr; gap: 24px; align-items: stretch; }
+.trio-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 24px; align-items: stretch; }
 .trio .card { padding: 28px; position: relative; overflow: hidden; display: flex; flex-direction: column; }
 .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
 .card-head h2 { font-size: 27px; margin: 0; }
@@ -323,9 +318,6 @@ strong { font-weight: 500; color: var(--ink); }
 
 .corporate p { margin: 0; font-size: 14px; color: #474b44; }
 
-.pricing .checklist { margin-bottom: 26px; }
-.pricing .btn { align-self: flex-start; position: relative; z-index: 1; }
-.deco-pricing { right: -6px; bottom: -10px; width: 70px; height: 200px; }
 
 /* Bottom: mindful / FAQ / contact */
 .bottom-grid { display: grid; grid-template-columns: .9fr 1.3fr 1fr; gap: 24px; align-items: stretch; }
@@ -417,7 +409,6 @@ strong { font-weight: 500; color: var(--ink); }
   .how-photo { aspect-ratio: 4 / 3; max-width: 560px; }
   .deco-corner { display: none; }
   .trio-grid { grid-template-columns: 1fr 1fr; }
-  .pricing { grid-column: 1 / -1; }
   .bottom-grid { grid-template-columns: 1fr 1fr; }
   .mindful { grid-column: 1 / -1; min-height: 420px; }
   .mindful-bg img { object-position: 50% 20%; }
@@ -488,7 +479,6 @@ strong { font-weight: 500; color: var(--ink); }
   .mindful { min-height: 480px; }
   .deco-left { display: none; }
 
-  .formats { grid-template-columns: 1fr; }
   .offer-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
   .offer { padding: 22px 14px 18px; }
   .offer h3 { font-size: 18px; }
@@ -645,4 +635,38 @@ strong { font-weight: 500; color: var(--ink); }
 .kind-all[hidden] { display: none; }
 @media (max-width: 680px) {
   .kind-all-wrap { display: none; }
+}
+
+/* ==========================================================
+   Find the right class / pricing
+   ========================================================== */
+.find-head { max-width: 720px; margin-bottom: 40px; }
+.find-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.find-card { padding: 30px 28px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; transition: transform .3s, box-shadow .3s; }
+.find-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.find-ic { width: 34px; height: 34px; color: var(--green); margin-bottom: 16px; }
+.find-card h3 { font-size: 23px; margin-bottom: 8px; }
+.find-card p { margin: 0; font-size: 15px; color: var(--muted); }
+.find-cta {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 26px;
+  padding: 36px 40px;
+  border-radius: 12px;
+  background: var(--green);
+  color: #dfe6dc;
+}
+.find-cta h3 { color: #fbf8f2; font-size: 28px; margin-bottom: 8px; }
+.find-cta p { margin: 0; max-width: 640px; font-size: 15px; }
+.deco-find { right: 22%; top: -30px; width: 70px; height: 200px; color: #9fb39a; opacity: .25; transform: rotate(20deg); }
+.btn-cream { background: var(--cream); color: var(--green); flex: none; position: relative; }
+.btn-cream:hover { background: #fff; transform: translateY(-1px); }
+
+@media (max-width: 920px) {
+  .find-grid { grid-template-columns: 1fr; gap: 14px; }
+  .find-cta { flex-direction: column; align-items: flex-start; padding: 30px 26px; }
 }
