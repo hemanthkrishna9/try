@@ -544,8 +544,6 @@ strong { font-weight: 500; color: var(--ink); }
 .kind-words .eyebrow { color: var(--gold); }
 .kind-words .section-sub { color: #c9d3c6; }
 .deco-kind { right: -10px; top: 40px; width: 90px; height: 250px; color: #9fb39a; opacity: .35; }
-.kind-count { margin: 0; font-family: var(--serif); font-size: 20px; font-style: italic; color: #c9d3c6; }
-.kind-count span { font-size: 44px; font-style: normal; color: var(--gold); margin-right: 6px; vertical-align: -6px; }
 
 .kind-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 34px; }
 .chip {
@@ -564,8 +562,6 @@ strong { font-weight: 500; color: var(--ink); }
 }
 .chip:hover { border-color: rgba(255, 255, 255, .6); }
 .chip[aria-pressed="true"] { background: var(--cream); border-color: var(--cream); color: var(--green); }
-.chip-n { font-size: 11px; min-width: 18px; padding: 3px 5px; border-radius: 999px; background: rgba(255, 255, 255, .14); text-align: center; }
-.chip[aria-pressed="true"] .chip-n { background: rgba(47, 74, 58, .12); }
 .chip:focus-visible { outline-color: var(--gold); }
 
 .kind-grid { columns: 3 300px; column-gap: 22px; }
@@ -616,7 +612,6 @@ strong { font-weight: 500; color: var(--ink); }
 .t-who span { font-size: 12.5px; color: var(--muted); letter-spacing: .04em; }
 
 @media (max-width: 680px) {
-  .kind-count { display: none; }
   .deco-kind { display: none; }
   .kind-filters { flex-wrap: nowrap; overflow-x: auto; margin: 0 -16px 24px; padding: 0 16px 4px; scrollbar-width: none; }
   .kind-filters::-webkit-scrollbar { display: none; }

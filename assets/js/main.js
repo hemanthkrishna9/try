@@ -74,18 +74,13 @@
     window.addEventListener('resize', checkClamp);
     if (document.fonts) document.fonts.ready.then(checkClamp);
 
-    var count = document.getElementById('kind-count');
-    if (count) count.textContent = stories.length;
-
     var filters = document.getElementById('kind-filters');
     (window.TESTIMONIAL_TAGS || []).forEach(function (tag) {
-      var n = stories.filter(function (t) { return (t.tags || []).indexOf(tag) >= 0; }).length;
-      if (!n) return;
+      if (!stories.some(function (t) { return (t.tags || []).indexOf(tag) >= 0; })) return;
       var b = make('button', 'chip', tag);
       b.type = 'button';
       b.dataset.tag = tag;
       b.setAttribute('aria-pressed', 'false');
-      b.appendChild(make('span', 'chip-n', String(n)));
       filters.appendChild(b);
     });
     // Show the first few stories until "Show all" is pressed; a filter always shows every match
@@ -102,7 +97,6 @@
       });
       if (showAll) {
         showAll.hidden = !!activeTag || expanded || stories.length <= LIMIT;
-        showAll.textContent = 'Show all ' + stories.length + ' stories';
       }
       checkClamp();
     }
