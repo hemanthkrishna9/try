@@ -36,4 +36,4 @@ Testimonials are in `assets/js/testimonials.js`. To add one, copy a block and fi
 
 ## Publishing
 
-The site is live at https://try.gudachari3.workers.dev/ on Cloudflare. A copy is also at https://hemanthkrishna9.github.io/try/ on GitHub Pages. Both deploy from the `gh-pages` branch, so pushing to `gh-pages` updates both.
+The site is live at https://chitrayoga.pages.dev/ on Cloudflare. A copy is also at https://hemanthkrishna9.github.io/try/ on GitHub Pages. Both deploy from the `gh-pages` branch, so pushing to `gh-pages` updates both.
