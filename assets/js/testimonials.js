@@ -105,8 +105,8 @@ window.TESTIMONIALS = [
     tags: ['Less stress', 'Flexibility & strength', 'Confidence']
   },
   {
-    name: 'Student',
-    meta: 'One-on-one',
+    name: 'Preethi',
+    meta: 'One-on-one · Canada',
     quote: "Thank you for the wonderful classes this past week. ❤️ I've already started noticing a positive difference. My mood has improved, and I feel much more energetic throughout the day. The one-on-one sessions have been really motivating and are helping me stay consistent. I also love that every class is different. The variety keeps it interesting, and the sessions are intense in the best way – they challenge me while still being enjoyable. I'm really happy that I decided to start this journey with you, and I'm looking forward to continuing. 😊🙏",
     mark: 'My mood has improved, and I feel much more energetic throughout the day.',
     tags: ['More energy', 'Less stress', 'Personal attention']
