@@ -5,6 +5,7 @@
 //   mark     – a sentence from the quote to highlight (must match the text exactly)
 //   results  – optional list shown as small chips
 //   tags     – which outcome filters this story appears under (see TESTIMONIAL_TAGS)
+//   country  – optional two-letter code for a flag; the file must exist in assets/images/flags/
 window.TESTIMONIAL_TAGS = [
   'More energy',
   'Less stress',
@@ -28,6 +29,7 @@ window.TESTIMONIALS = [
   },
   {
     name: 'Gowthami',
+    country: 'dk',
     meta: 'Online · Denmark · Post-pregnancy',
     quote: 'I for sure feel more energetic!! I ran for 900 metres without stopping and it felt surreal. Chitrika is such a beautiful soul, she instilled such positivity in me. I have started to feel myself again after post pregnancy. All thanks to her.',
     mark: 'I ran for 900 metres without stopping and it felt surreal.',
@@ -42,6 +44,7 @@ window.TESTIMONIALS = [
   },
   {
     name: 'Nagakumar',
+    country: 'ae',
     meta: 'UAE',
     quote: 'Recently started yoga classes with Chitrika to address hamstring stiffness and lower back issues, and the experience has been very positive. Her guidance is clear, supportive, and focused on proper stretching and movements. Already feeling comfortable and confident after sessions. Highly recommend for anyone looking to improve flexibility and manage stiffness.',
     mark: 'Already feeling comfortable and confident after sessions.',
@@ -56,6 +59,7 @@ window.TESTIMONIALS = [
   },
   {
     name: 'Akhila',
+    country: 'in',
     meta: 'Mumbai',
     quote: "After joining Chitrika's yoga classes I feel very positive, energetic and active the whole day. Really, I'm very happy, stress-free and seeing inch loss. You're a 💯% perfect yoga teacher – you always pay attention to everyone, always motivate us and correct our asanas. Thank you Chitrika ❤️😊",
     mark: "I'm very happy, stress-free and seeing inch loss.",
@@ -63,6 +67,7 @@ window.TESTIMONIALS = [
   },
   {
     name: 'Ashvitha',
+    country: 'gb',
     meta: 'UK',
     quote: "A little appreciation for you, Chitrika – you truly deserve it! Never thought I'd actually look forward to a 6 a.m. workout, but here we are! Your core-strength sessions leave me feeling stronger and energised, while the yoga sessions bring that much-needed calm and balance. I remember having 2–3 Hatha Yoga sessions so far, and I'm already loving it! And during core strength, your “just 20 more seconds… 10 more seconds… don't give up!” somehow gives me that extra push to complete the set! Thank you for always motivating us, pushing us beyond our limits, and making every session challenging, fun, and rewarding. Truly grateful to be learning from you!",
     mark: "Never thought I'd actually look forward to a 6 a.m. workout, but here we are!",
@@ -84,6 +89,7 @@ window.TESTIMONIALS = [
   },
   {
     name: 'Pavan Kumar',
+    country: 'de',
     meta: 'Online · Germany',
     quote: 'Had a wonderful session today! Thank you for guiding me with such ease, patience, and positive energy. You have a special way of making every pose feel approachable – I truly appreciated how smoothly you led the class and helped me stay present throughout. I walked out feeling lighter, calmer, and wonderfully refreshed. Looking forward to many more sessions with you.',
     mark: 'I walked out feeling lighter, calmer, and wonderfully refreshed.',
@@ -106,6 +112,7 @@ window.TESTIMONIALS = [
   },
   {
     name: 'Preethi',
+    country: 'ca',
     meta: 'One-on-one · Canada',
     quote: "Thank you for the wonderful classes this past week. ❤️ I've already started noticing a positive difference. My mood has improved, and I feel much more energetic throughout the day. The one-on-one sessions have been really motivating and are helping me stay consistent. I also love that every class is different. The variety keeps it interesting, and the sessions are intense in the best way – they challenge me while still being enjoyable. I'm really happy that I decided to start this journey with you, and I'm looking forward to continuing. 😊🙏",
     mark: 'My mood has improved, and I feel much more energetic throughout the day.',

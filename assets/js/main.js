@@ -55,7 +55,18 @@
       cap.appendChild(make('span', 't-avatar t-avatar-' + (i % 4), t.name.charAt(0)));
       var who = make('span', 't-who');
       who.appendChild(make('strong', null, t.name));
-      if (t.meta) who.appendChild(make('span', null, t.meta));
+      if (t.meta) {
+        var meta = make('span', null, t.meta);
+        if (t.country) {
+          var flag = make('img', 't-flag');
+          flag.src = 'assets/images/flags/' + t.country + '.svg';
+          flag.alt = '';
+          flag.width = 16;
+          flag.height = 12;
+          meta.insertBefore(flag, meta.firstChild);
+        }
+        who.appendChild(meta);
+      }
       cap.appendChild(who);
       card.appendChild(cap);
 

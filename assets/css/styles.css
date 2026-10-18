@@ -242,6 +242,11 @@ strong { font-weight: 500; color: var(--ink); }
 .reach-item { display: flex; gap: 14px; align-items: flex-start; padding: 18px 20px; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255, 255, 255, .35); }
 .reach-item .ic { width: 22px; height: 22px; color: var(--green); margin-top: 2px; }
 .reach-item p { margin: 0; font-size: 14.5px; color: #474b44; }
+.flag-row { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+.flag-row img { width: 17px; height: 12.75px; border-radius: 2px; object-fit: cover; box-shadow: 0 0 0 1px rgba(0, 0, 0, .08); }
+.flag-row-sm { display: flex; gap: 5px; margin: 10px 0 0; }
+.flag-row-sm img { width: 18px; height: 13px; }
+.t-flag { display: inline-block; width: 16px; height: 12px; border-radius: 2px; object-fit: cover; margin-right: 6px; vertical-align: -1px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .08); }
 
 /* Offerings */
 .offerings { background: var(--cream-2); }
@@ -403,6 +408,7 @@ strong { font-weight: 500; color: var(--ink); }
 }
 
 @media (max-width: 1080px) {
+  .reach { grid-template-columns: 1fr 1fr; }
   .nav { gap: 24px; }
   .nav ul { gap: 20px; }
   .about-grid { grid-template-columns: 1fr 1.3fr; }
