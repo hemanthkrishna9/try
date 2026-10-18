@@ -88,17 +88,40 @@
       b.appendChild(make('span', 'chip-n', String(n)));
       filters.appendChild(b);
     });
+    // Show the first few stories until "Show all" is pressed; a filter always shows every match
+    var LIMIT = 9;
+    var expanded = false;
+    var activeTag = '';
+    var showAll = document.getElementById('kind-all');
+    var swipeRow = window.matchMedia('(max-width: 680px)');
+    function applyView() {
+      var limited = !activeTag && !expanded && !swipeRow.matches;
+      grid.querySelectorAll('.t-card').forEach(function (card, i) {
+        var match = !activeTag || card.dataset.tags.indexOf('|' + activeTag + '|') >= 0;
+        card.hidden = !match || (limited && i >= LIMIT);
+      });
+      if (showAll) {
+        showAll.hidden = !!activeTag || expanded || stories.length <= LIMIT;
+        showAll.textContent = 'Show all ' + stories.length + ' stories';
+      }
+      checkClamp();
+    }
+    if (showAll) {
+      showAll.addEventListener('click', function () {
+        expanded = true;
+        window.addEventListener('resize', applyView);
+    applyView();
+      });
+    }
     filters.addEventListener('click', function (e) {
       var b = e.target.closest('.chip');
       if (!b) return;
       filters.querySelectorAll('.chip').forEach(function (c) { c.setAttribute('aria-pressed', String(c === b)); });
-      var tag = b.dataset.tag;
-      grid.querySelectorAll('.t-card').forEach(function (card) {
-        card.hidden = !!tag && card.dataset.tags.indexOf('|' + tag + '|') < 0;
-      });
+      activeTag = b.dataset.tag;
       grid.scrollLeft = 0;
-      checkClamp();
+      applyView();
     });
+    applyView();
   }
 
   // Show the styled placeholder until a real photo exists at the img path

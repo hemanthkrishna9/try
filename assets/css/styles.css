@@ -633,3 +633,10 @@ strong { font-weight: 500; color: var(--ink); }
 @media (prefers-reduced-motion: reduce) {
   .t-card { animation: none; }
 }
+.kind-all-wrap { text-align: center; margin-top: 8px; }
+.kind-all { background: transparent; color: #fbf8f2; border: 1px solid rgba(255, 255, 255, .4); cursor: pointer; }
+.kind-all:hover { background: rgba(255, 255, 255, .08); }
+.kind-all[hidden] { display: none; }
+@media (max-width: 680px) {
+  .kind-all-wrap { display: none; }
+}
