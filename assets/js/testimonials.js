@@ -70,10 +70,10 @@ window.TESTIMONIALS = [
   },
   {
     name: 'Krishna',
-    meta: 'Student',
-    quote: 'I joined the class to improve my strength and flexibility, but the surprising factor is that my mommy tummy has reduced (with 2 C-sections, after these many years it feels like anything is possible with consistency under proper guidance), so eventually my confidence has increased.',
+    meta: 'Group class',
+    quote: "I joined the class to improve my strength and flexibility, but the surprising factor is that my mommy tummy has reduced (with 2 C-sections, after these many years it feels like anything is possible with consistency under proper guidance), so eventually my confidence has increased. I've really enjoyed your yoga classes. I love how you understand each student's pace and make everyone feel comfortable throughout the class. You give personal attention to each one of us and make sure we're doing every posture correctly. I also appreciate how every session includes pranayama, Surya Namaskar with variations and different yoga variations, which keeps the practice interesting and complete. After every class, I feel so relaxed, peaceful, energised and refreshed.",
     mark: 'my mommy tummy has reduced',
-    tags: ["Women's health", 'Weight loss', 'Flexibility & strength', 'Confidence']
+    tags: ["Women's health", 'Weight loss', 'Flexibility & strength', 'Confidence', 'Personal attention', 'More energy', 'Less stress']
   },
   {
     name: 'Pavan Kumar',
@@ -81,13 +81,6 @@ window.TESTIMONIALS = [
     quote: 'Had a wonderful session today! Thank you for guiding me with such ease, patience, and positive energy. You have a special way of making every pose feel approachable – I truly appreciated how smoothly you led the class and helped me stay present throughout. I walked out feeling lighter, calmer, and wonderfully refreshed. Looking forward to many more sessions with you.',
     mark: 'I walked out feeling lighter, calmer, and wonderfully refreshed.',
     tags: ['Less stress', 'More energy']
-  },
-  {
-    name: 'Krishna',
-    meta: 'Group class',
-    quote: "I've really enjoyed your yoga classes. I love how you understand each student's pace and make everyone feel comfortable throughout the class. You give personal attention to each one of us and make sure we're doing every posture correctly. I also appreciate how every session includes pranayama, Surya Namaskar with variations and different yoga variations, which keeps the practice interesting and complete. After every class, I feel so relaxed, peaceful, energised and refreshed.",
-    mark: 'You give personal attention to each one of us',
-    tags: ['Personal attention', 'More energy', 'Less stress']
   },
   {
     name: 'Poorva Gowda',
