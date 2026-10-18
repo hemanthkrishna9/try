@@ -55,6 +55,13 @@ window.TESTIMONIALS = [
     tags: ['Better sleep', 'Weight loss', 'Less stress']
   },
   {
+    name: 'Akhila',
+    meta: 'Mumbai',
+    quote: "After joining Chitrika's yoga classes I feel very positive, energetic and active the whole day. Really, I'm very happy, stress-free and seeing inch loss. You're a 💯% perfect yoga teacher – you always pay attention to everyone, always motivate us and correct our asanas. Thank you Chitrika ❤️😊",
+    mark: "I'm very happy, stress-free and seeing inch loss.",
+    tags: ['More energy', 'Less stress', 'Weight loss', 'Personal attention']
+  },
+  {
     name: 'Ashvitha',
     meta: 'UK',
     quote: "A little appreciation for you, Chitrika – you truly deserve it! Never thought I'd actually look forward to a 6 a.m. workout, but here we are! Your core-strength sessions leave me feeling stronger and energised, while the yoga sessions bring that much-needed calm and balance. I remember having 2–3 Hatha Yoga sessions so far, and I'm already loving it! And during core strength, your “just 20 more seconds… 10 more seconds… don't give up!” somehow gives me that extra push to complete the set! Thank you for always motivating us, pushing us beyond our limits, and making every session challenging, fun, and rewarding. Truly grateful to be learning from you!",
